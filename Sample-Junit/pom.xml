@@ -13,19 +13,6 @@
 		<module>web</module>
 	</modules>
 
-	<dependencies>
-		<dependency>
-			<groupId>commons-logging</groupId>
-			<artifactId>commons-logging</artifactId>
-			<version>${commons.logging.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>commons-lang</groupId>
-			<artifactId>commons-lang</artifactId>
-			<version>${common.lang.version}</version>
-			<type>jar</type>
-		</dependency>
-	</dependencies>
 	<build>
 		<finalName>SampleJunit</finalName>
 		<plugins>
@@ -42,19 +29,9 @@
 	</build>
 	<properties>
 		<project.build.sourceEncoding>Cp1252</project.build.sourceEncoding>
-		<commons.logging.version>1.2</commons.logging.version>
-		<aopalliance.version>1.0</aopalliance.version>
-		<javax.servlet.version>3.0.1</javax.servlet.version>
 		<spring.version>4.3.20.RELEASE</spring.version>
 		<jdk.version>11</jdk.version>
-		<cglib.version>2.2.2</cglib.version>
-		<common.lang.version>2.5</common.lang.version>
-		<aspectj.version>1.8.6</aspectj.version>
-		<commons-fileupload.version>1.3</commons-fileupload.version>
-		<poi-version>3.9</poi-version>
 		<struts.version>2.5.20</struts.version>
-		<struts.spring.version>2.5.20</struts.spring.version>
-		<servlet.version>3.1.0</servlet.version>
 		<tomcat-current-version>9.0.16</tomcat-current-version>
 	</properties>
 </project>

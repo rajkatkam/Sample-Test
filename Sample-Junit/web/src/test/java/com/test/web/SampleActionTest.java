@@ -47,17 +47,4 @@ public class SampleActionTest extends StrutsTestCase {
 
 		assertEquals(null, userAction.getName());
 	}
-
-	@Test
-	public void testActionError() throws Throwable {
-
-		request.setAttribute("name", null);
-		request.setAttribute("address", "raj123");
-
-		ActionProxy actionProxy = getActionProxy("test/useraction");
-		UserAction userAction = (UserAction) actionProxy.getAction();
-		if (userAction != null && userAction.getName() == null)
-
-		assertEquals(null, null);
-	}
 }
