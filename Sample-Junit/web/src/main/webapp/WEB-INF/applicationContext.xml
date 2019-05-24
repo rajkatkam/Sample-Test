@@ -8,6 +8,6 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns="http://www.springframework.org/schema/beans">
 	<context:annotation-config />
-	<context:component-scan base-package="com.dgs.user" />
+	<context:component-scan base-package="com.user" />
 </beans>
 
