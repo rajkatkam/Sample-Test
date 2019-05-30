@@ -8,12 +8,6 @@
 	<version>com.example.struts</version>
 	<name>Web</name>
 
-	<parent>
-		<groupId>com.example.struts</groupId>
-		<artifactId>struts</artifactId>
-		<version>1.0-SNAPSHOT</version>
-	</parent>
-
 	<dependencies>
 		<!-- Struts 2 -->
 		<dependency>
@@ -62,6 +56,27 @@
 		</dependency>
 	</dependencies>
 	<build>
-		<finalName>struts2 sample</finalName>
+		<finalName>struts 2 Example</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.0</version>
+				<configuration>
+					<source>${jdk.version}</source>
+					<target>${jdk.version}</target>
+					<excludes>
+						<exclude>${project.basedir}\src\main\java\module-info.java</exclude>
+					</excludes>
+				</configuration>
+			</plugin>
+		</plugins>
 	</build>
+	<properties>
+		<project.build.sourceEncoding>Cp1252</project.build.sourceEncoding>
+		<spring.version>4.3.20.RELEASE</spring.version>
+		<jdk.version>11</jdk.version>
+		<struts.version>2.5.20</struts.version>
+		<tomcat-current-version>9.0.16</tomcat-current-version>
+	</properties>
 </project>
